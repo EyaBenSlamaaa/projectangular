@@ -1,0 +1,48 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.delivery-image img {
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.delivery-content {
+    flex: 1;
+}
+
+.delivery-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.delivery-text {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #C71585;
+}
+
+.delivery-banner {
+    background-color: #275630;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+svg {
+    max-width: 400px;
+}

@@ -1,0 +1,43 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background:rgb(174, 102, 172);
+  
+    &-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+    }
+  
+    &-links {
+      display: flex;
+      gap: 16px;
+  
+      .link-button {
+        background-color: rgb(174, 102, 172);
+        color: rgb(255, 255, 255); // Couleur principale (modifiable selon votre thème)
+        border: 2px solid rgb(174, 102, 172);
+        border-radius: 4px;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+  
+        &:hover {
+          background-color: rgb(151, 78, 148);
+          color: white;
+        }
+  
+        &:active {
+          transform: scale(0.95); // Réduction de taille pour simuler un clic
+        }
+      }
+    }
+   
+  }
+  

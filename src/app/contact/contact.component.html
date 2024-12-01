@@ -1,0 +1,27 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Nom</mat-label>
+      <input matInput formControlName="name" placeholder="Entrez votre nom" required>
+      <mat-error *ngIf="contactForm.get('name')?.hasError('required')">
+        Le nom est requis.
+      </mat-error>
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" placeholder="Entrez votre email" required>
+      <mat-error *ngIf="contactForm.get('email')?.hasError('email')">
+        Adresse email invalide.
+      </mat-error>
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Message</mat-label>
+      <textarea matInput formControlName="message" placeholder="Entrez votre message"></textarea>
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit" [disabled]="contactForm.invalid">
+      Envoyer
+    </button>
+  </form>
+  

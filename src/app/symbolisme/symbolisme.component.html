@@ -1,0 +1,12 @@
+<div class="content" *ngFor="let flower of flowers">
+    <mat-card class="flower-card">
+        <h2>{{ flower.color }} </h2>
+        <img mat-card-image [src]="flower.image" [alt]="flower.color" class="image">
+        <mat-card-content>
+            <p>{{ flower.description }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button class="cta-button">{{ flower.buttonLabel }}</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,107 @@
+/* about.component.scss */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #ffffff;
+    gap: 20px;
+    animation: fadeIn 1s ease-in-out; /* Animation when the page loads */
+  }
+  
+  .image-section {
+    flex: 1;
+    max-width: 40%;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(204, 17, 111, 0.838);
+    animation: slideIn 1s ease-out; /* Slide-in effect for the image */
+  }
+  
+  .content-section {
+    flex: 1;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeInRight 1.5s ease-out; /* Fade-in effect for the content */
+  }
+  
+  /* About Us title - adjusted size and added animation */
+  .about-title {
+    font-size: 2.5rem; /* Increased font size */
+    font-weight: bold;
+    color: #c51f78;
+    margin-bottom: 15px;
+    animation: fadeInUp 1.5s ease-in-out; /* Animation for title */
+  }
+  
+  /* About Us description - adjusted size and added animation */
+  .about-description {
+    font-size: 1.3rem; /* Adjusted font size */
+    color: #822347;
+    line-height: 1.8; /* Increased line height for better readability */
+    margin-bottom: 20px;
+    animation: fadeInUp 2s ease-in-out; /* Animation for paragraph */
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .social-link {
+    font-size: 1.5rem;
+    color: #c51757;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #f3126c; /* Hover effect */
+    }
+  
+    i {
+      transition: transform 0.3s ease;
+    }
+  
+    &:hover i {
+      transform: scale(1.2); /* Enlarge icon on hover */
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  

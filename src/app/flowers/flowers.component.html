@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="item" *ngFor="let bouquet of bouquets">
+      <mat-card>
+        <img mat-card-image [src]="bouquet.img" [alt]="bouquet.name">
+        <mat-card-content>
+          <h3>{{ bouquet.name }}</h3>
+          <p>{{ bouquet.description }}</p>
+          <p><strong>Prix :</strong> {{ bouquet.price }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button >Acheter</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+  
