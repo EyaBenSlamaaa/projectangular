@@ -1,4 +1,5 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+ <h1>Contact Us</h1>
     <mat-form-field appearance="fill">
       <mat-label>Nom</mat-label>
       <input matInput formControlName="name" placeholder="Entrez votre nom" required>
@@ -20,7 +21,7 @@
       <textarea matInput formControlName="message" placeholder="Entrez votre message"></textarea>
     </mat-form-field>
   
-    <button mat-raised-button color="primary" type="submit" [disabled]="contactForm.invalid">
+    <button mat-raised-button  type="submit" [disabled]="contactForm.invalid">
       Envoyer
     </button>
   </form>

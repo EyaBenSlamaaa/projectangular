@@ -17,7 +17,7 @@
   
       .link-button {
         background-color: rgb(174, 102, 172);
-        color: rgb(255, 255, 255); // Couleur principale (modifiable selon votre thème)
+        color: rgb(255, 255, 255); 
         border: 2px solid rgb(174, 102, 172);
         border-radius: 4px;
         padding: 8px 16px;
@@ -34,7 +34,7 @@
         }
   
         &:active {
-          transform: scale(0.95); // Réduction de taille pour simuler un clic
+          transform: scale(0.95); 
         }
       }
     }

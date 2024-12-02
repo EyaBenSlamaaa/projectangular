@@ -5,7 +5,6 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -16,6 +15,7 @@ import { SymbolismeComponent } from './symbolisme/symbolisme.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { SaisonComponent } from './saison/saison.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +25,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     FlowersComponent,
     LivraisonComponent,
     SymbolismeComponent,
+    SaisonComponent,
   
 
   

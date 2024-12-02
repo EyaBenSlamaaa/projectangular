@@ -1,5 +1,3 @@
-/* about.component.scss */
-
 .about-container {
     display: flex;
     align-items: center;
@@ -7,7 +5,7 @@
     padding: 60px;
     background-color: #ffffff;
     gap: 20px;
-    animation: fadeIn 1s ease-in-out; /* Animation when the page loads */
+    animation: fadeIn 1s ease-in-out; 
   }
   
   .image-section {
@@ -20,7 +18,7 @@
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(204, 17, 111, 0.838);
-    animation: slideIn 1s ease-out; /* Slide-in effect for the image */
+    animation: slideIn 1s ease-out; 
   }
   
   .content-section {
@@ -29,25 +27,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation: fadeInRight 1.5s ease-out; /* Fade-in effect for the content */
+    animation: fadeInRight 1.5s ease-out; 
   }
   
-  /* About Us title - adjusted size and added animation */
   .about-title {
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 2.5rem;
     font-weight: bold;
     color: #c51f78;
     margin-bottom: 15px;
-    animation: fadeInUp 1.5s ease-in-out; /* Animation for title */
+    animation: fadeInUp 1.5s ease-in-out;
   }
   
-  /* About Us description - adjusted size and added animation */
   .about-description {
-    font-size: 1.3rem; /* Adjusted font size */
+    font-size: 1.3rem; 
     color: #822347;
-    line-height: 1.8; /* Increased line height for better readability */
+    line-height: 1.8; 
     margin-bottom: 20px;
-    animation: fadeInUp 2s ease-in-out; /* Animation for paragraph */
+    animation: fadeInUp 2s ease-in-out; 
   }
   
   .social-links {
@@ -63,7 +59,7 @@
     transition: color 0.3s ease;
   
     &:hover {
-      color: #f3126c; /* Hover effect */
+      color: #f3126c;
     }
   
     i {
@@ -71,11 +67,10 @@
     }
   
     &:hover i {
-      transform: scale(1.2); /* Enlarge icon on hover */
+      transform: scale(1.2); 
     }
   }
   
-  /* Animations */
   @keyframes fadeIn {
     0% {
       opacity: 0;

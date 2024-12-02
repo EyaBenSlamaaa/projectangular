@@ -25,19 +25,19 @@ body {
 }
 
 .item:hover {
-    transform: scale(1.05); /* Agrandit légèrement */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Accentue l'ombre */
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .item img {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    transition: transform 0.3s ease; /* Animation pour l'image */
+    transition: transform 0.3s ease; 
 }
 
 .item img:hover {
-    transform: scale(1.1); /* Agrandit légèrement l'image */
+    transform: scale(1.1); 
 }
 
 .item h3 {
